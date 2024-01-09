@@ -60,6 +60,7 @@ rf_model.fit(X_train_rf, y_train_rf)
 
 # Create a Dash app
 app = dash.Dash(__name__,title="Ontario Housing Price Predictor")
+server = app.server
 
 # Define the layout of the app
 app.layout = html.Div(style={
